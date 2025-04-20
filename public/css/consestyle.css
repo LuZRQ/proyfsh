@@ -1,0 +1,45 @@
+.hero-section {
+    background-image: url('../img/frutasVerdu.png');
+    background-size: cover;
+    background-position: center;
+    height: 110px;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    text-align: center;
+    height: 110px;
+}
+
+.hero-content a {
+    position: absolute;
+    top: 15px; /* Ajusta la posición vertical de la flecha */
+    left: 10px; /* Asegura que esté bien alineada a la izquierda */
+    color: rgb(216, 248, 204);
+    font-size: 24px;
+    z-index: 10; /* Asegura que la flecha esté por encima del contenido */
+    background-color: rgba(0, 21, 6, 0.7); /* Fondo oscuro alrededor de la flecha */
+    padding: 10px; /* Espaciado alrededor de la flecha */
+    border-radius: 50%; /* Esto hace que sea un círculo, si prefieres un cuadrado, quítalo */
+}
+
+
+.hero-content h2, .hero-content p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Reduce la sombra para mejorar la legibilidad */
+    text-align: center;
+    width: 100%;
+    margin-top: 15px; /* Elimina margen superior para que suba más el texto */
+    position: relative;
+    margin-left: 50px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24; /* Hace que la cabecera se quede en la parte superior */
+    z-index: 100;
+}

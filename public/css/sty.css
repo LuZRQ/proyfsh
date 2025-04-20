@@ -1,0 +1,94 @@
+/* Estilos generales */
+
+.smo{
+box-shadow:0 7px 13px rgba(0, 0, 0, 0.627);
+width: 250px;
+height: auto;
+}
+
+
+
+
+.box {
+    background-color: #ffe6cdb4; 
+    border: 4px dashed #1a0101;
+    border-radius: 10px;
+    box-shadow: 0 6px 11px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 650px;
+    text-align: center;
+    position: relative;
+}
+
+/* fondo cuadrado iconos*/
+.box{
+    width: 400px;
+    height: auto;
+}
+
+.icon-container {
+    display: flex; /* Para alinear ícono y texto */
+    align-items: center; /* Centrar verticalmente */
+    border: 2px solid #49161f; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+}
+
+.icon {
+    font-size: 24px; /* Ajusta este valor para el tamaño del ícono */
+    margin-right: 5px; /* Espaciado a la derecha del ícono */
+    color: #49161f; /* Color del ícono, ajusta según tus preferencias */
+}
+
+.custom-list {
+    list-style: none; /* Elimina los estilos predeterminados de la lista */
+    padding: 0; /* Elimina el padding */
+}
+
+.custom-list li {
+    position: relative; /* Para posicionar el círculo */
+    margin: 20px 0; /* Espaciado entre los elementos */
+    padding-left: 50px; /* Espaciado para el círculo */
+}
+
+.custom-list li:before {
+    content: attr(data-number); /* Usar el número desde un atributo */
+    position: absolute; /* Posicionar el número */
+    left: 0; /* Alinear a la izquierda */
+    top: 0; /* Alinear al top */
+    width: 30px; /* Ancho del círculo */
+    height: 30px; /* Alto del círculo */
+    border-radius: 50%; /* Hacerlo circular */
+    background-color: #fdfd96; /* Color de fondo */
+    color: #333; /* Color del número */
+    display: flex; /* Usar flexbox para centrar el texto */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-weight: bold; /* Hacer el número más grueso */
+}
+
+
+/* Estilos para celulares */
+@media (max-width: 767px) {
+   
+    .cud{
+        margin-left: -30px;
+    }
+    .caj{
+        margin-left: -30px;
+        
+        }
+    
+}
+
+
+/* Estilos para computadoras de escritorio */
+@media (min-width: 1441px) {
+   
+    img{
+        margin-left: -69px;
+        margin-right: 22px;
+    }
+}
+
+

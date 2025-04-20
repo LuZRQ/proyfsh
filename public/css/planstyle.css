@@ -1,0 +1,102 @@
+.hero-section {
+    background-image: url('../img/frutasVerdu.png');
+    background-size: cover;
+    background-position: center;
+    height: 110px;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+    text-align: center;
+    height: 110px;
+}
+
+.hero-content a {
+    position: absolute;
+    top: 15px; /* Ajusta la posición vertical de la flecha */
+    left: 10px; /* Asegura que esté bien alineada a la izquierda */
+    color: rgb(216, 248, 204);
+    font-size: 24px;
+    z-index: 10; /* Asegura que la flecha esté por encima del contenido */
+    background-color: rgba(98, 1, 82, 0.7); /* Fondo oscuro alrededor de la flecha */
+    padding: 10px; /* Espaciado alrededor de la flecha */
+    border-radius: 50%; /* Esto hace que sea un círculo, si prefieres un cuadrado, quítalo */
+}
+
+
+.hero-content h2, .hero-content p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Reduce la sombra para mejorar la legibilidad */
+    text-align: center;
+    width: 100%;
+    margin-top: 15px; /* Elimina margen superior para que suba más el texto */
+    position: relative;
+    margin-left: 50px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24; /* Hace que la cabecera se quede en la parte superior */
+    z-index: 100;
+}
+
+/* Imagen de fondo con overlay transparente */
+.card-background {
+    position: relative; /* Necesario para que el :before se posicione correctamente */
+    background-image: url('../img/fondoPlan.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.221);
+    color: rgb(255, 255, 255);
+}
+
+/* Fondo blanco transparente superpuesto sobre la imagen */
+.card-background:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo blanco con transparencia del 50% */
+    border-radius: 0.5rem; /* Coincide con los bordes del card */
+    z-index: 1; /* Asegurar que esté detrás del contenido */
+}
+
+/* Asegurar que el contenido esté encima del overlay */
+.card-content {
+    position: relative;
+    z-index: 2; /* Colocar el contenido por encima del overlay */
+}
+
+
+
+
+
+/* Agregar un fondo negro con transparencia solo alrededor del texto */
+.card-content {
+    position: relative; /* Necesario si se utiliza 'absolute' en los hijos */
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo negro con 60% de transparencia */
+    padding: 1rem; /* Añadir un padding para que el texto no esté pegado al borde */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    color: rgb(0, 0, 0); /* Asegurar que el texto sea legible sobre el fondo oscuro */
+    z-index: 1; /* Asegurar que el contenido esté por encima de otros elementos */
+    display: inline-block; /* Ajustar el tamaño al contenido del texto */
+}
+
+
+
+
+
+
+.card-shadow:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
+}
+

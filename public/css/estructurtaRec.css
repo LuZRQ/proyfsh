@@ -1,0 +1,26 @@
+.custom-list {
+    list-style: none; /* Elimina los estilos predeterminados de la lista */
+    padding: 0; /* Elimina el padding */
+}
+
+.custom-list li {
+    position: relative; /* Para posicionar el círculo */
+    margin: 20px 0; /* Espaciado entre los elementos */
+    padding-left: 50px; /* Espaciado para el círculo */
+}
+
+.custom-list li:before {
+    content: attr(data-number); /* Usar el número desde un atributo */
+    position: absolute; /* Posicionar el número */
+    left: 0; /* Alinear a la izquierda */
+    top: 0; /* Alinear al top */
+    width: 30px; /* Ancho del círculo */
+    height: 30px; /* Alto del círculo */
+    border-radius: 50%; /* Hacerlo circular */
+    background-color: #fdfd96; /* Color de fondo */
+    color: #333; /* Color del número */
+    display: flex; /* Usar flexbox para centrar el texto */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    font-weight: bold; /* Hacer el número más grueso */
+}

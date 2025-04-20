@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    color: #333; /* Color de texto oscuro */
+}
+
+header {
+    background-color: #28a745; /* Verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto; /* Centra el contenido */
+}
+
+.plan-container {
+    background-color: white; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+}
+
+h3 {
+    color: #28a745; /* Verde para los encabezados de secciones */
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #28a745; /* Verde */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Espacio entre el contenido y el pie de página */
+}
